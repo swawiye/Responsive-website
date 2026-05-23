@@ -11,14 +11,13 @@ body {
     /* enables flexible movement of images and text */
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 10px; /* prevent some content from hiding under the navbar */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     background-color:darkseagreen;
-    padding: 15px 30px; /* increases space inside a container */
+    padding: 30px; /* increases space inside a container */
     color: white;
     /* navbar remain fixed at the top */
     position: fixed;
@@ -31,6 +30,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    margin-top: 12px;
 }
 
 /* underline navlinks on hover with the centre out effect */
@@ -161,13 +161,15 @@ main {
 }
 
 form {
-    max-width: 400px;
+    width: 400px;
+    height: 300px;
     margin: 20px auto;/* 1st one is TOP&BOTTOM 2nd one is RIGHT&LEFT, auto-adjusts to the page */
     text-align: center;
-    border: 1px solid darkgrey;
+    border: 1px solid darkseagreen;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 input textarea {
@@ -179,8 +181,8 @@ input textarea {
 }
 
 button {
-    width: 50%;
-    padding: 20px;
+    width: 30%;
+    padding: 5px;
     background: darkseagreen;
     color: white;
     border: none;
@@ -192,3 +194,25 @@ button {
 button:hover {
     background: darkgrey;
 }
+
+.social-links {
+    color: black;
+}
+
+.logo {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#sections {
+    width: full;
+}
+
+#form-section{
+    width: full;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ input, textarea {
+    border: darkseagreen solid 2px;
+ }
