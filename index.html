@@ -23,40 +23,48 @@
 
       <!-- Hero Section -->
      <div class="hero">
-        <img src="assets\aura1.jpg">
-        <img src="assets\aura2.jpg">
-        <img src="assets\aura3.jpeg">
+        <img src="assets/aura1.jpg">
+        <img src="assets/aura2.jpg">
+        <img src="assets/aura3.jpeg">
 
         <header id="hero">
            <div class="hero-content">
-              <h1>Welcome to My Website</h1>
-              <p>Your one-stop solution for styling services.</p>
-              <a href="#contact" class="btn">Get Started</a>
+              <h1>Raise your aura</h1>
+              <p>welcome to your one-stop solution for styling services</p>
            </div>
         </header>
       </div>
 
       <!-- Main Section -->
       <main>
-         <div id="sections">
+         <div class="section">
            <h2>About Us</h2>
            <p>We specialize in creating art by enabling you to express yourself through fashion.</p>
          </div>
           
-         <div id="sections">
+         <div class="section">
            <h2>Our Services</h2>
            <div class="services-container">
                <div class="service-card">
                   <h3>Shopping</h3>
-                  <p>We have shopping assistant with keen eyes for aesthetic appeal who help you shop for clothes that suit you.</p>
+                  <p>We have shopping assistants with keen eyes for aesthetic appeal who help you shop for clothes that suit you.</p>
+                  <div class="service-image-card">
+                     <img src="assets/shopping.jpg" alt="shopping">
+                  </div>
                </div>
                <div class="service-card">
                   <h3>Styling</h3>
-                  <p>We supplement your taste in clothing by helping put together lovely outfits.</p>
+                  <p>We supplement your personal taste in clothing by helping put together lovely and stunning outfits that feel just like you.</p>
+                  <div class="service-image-card">
+                     <img src="assets/outfit.jpg" alt="outfit">
+                  </div>
                </div>
                <div class="service-card">
                   <h3>Aesthetic Discovery</h3>
-                  <p>We have tests to help you discover your unique aesthetic when it comes to clothing.</p>
+                  <p>We have psychometric tests to help you discover your unique aesthetic when it comes to dressing and styling.</p>
+                  <div class="service-image-card">
+                     <img src="assets/aesthetic.jpg" alt="aesthetic">
+                  </div>
                </div>
            </div>
          </div>
@@ -65,82 +73,53 @@
          <div id="contact">
             <h2>Contact Us</h2>
             <form>
-               <div id="form-section">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Your Name" required>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+               <div class="form-group">
+                 <label for="message">Message</label>
+                 <textarea class="form-control" id="message" rows="3"></textarea>
                </div>
-               <div id="form-section">
-                  <label for="email">Email address</label>
-                  <input type="email" id="email" placeholder="Your Email" required>
-               </div>
-               <div id="form-section">
-                  <label for="message">Message</label>
-                  <textarea id="message" placeholder="Your Message" required></textarea>
-               </div>
-               <button type="submit">Send</button>
+              <button type="submit" class="btn btn-primary green-200" id="button">Send</button>
             </form>
          </div>
       </main>
 
       <!-- Footer -->
-      <!-- <footer>
-         <div class="footer-container">
-            <div class="footer-column">
-                <h3>About</h3>
-                <p>We are dedicated to promoting your self-expression through your clothing</p>
-            </div>
-            <div class="footer-column">
-               <h3>Quick Links</h3>
-               <ul>
-                  <li><a href="#hero">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#contact">Contact</a></li>
-               </ul>
-            </div>
-            <div class="footer-column">
-               <h3>Contact</h3>
-               <p>Email: aurafashion@gmail.com</p>
-               <p>Phone: +123 456 7890</p>
-            </div> -->
-            <!-- Social Media Links -->
-            <!-- <div class="footer-column">
-               <h3>Follow Us</h3>
-               <div class="social-links">
-                  <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <footer class="border-top py-5 bg-light"> 
+         <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+               <div class="col"> 
+                  <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">AuraFashion</a>
+                  <p class="text-body-secondary">© 2026 | All Rights Reserved</p>
+               </div>
+               <div class="col"> 
+                  <h5>About</h5> 
+                  <p class="text-body-secondary">We are dedicated to promoting your self-expression through your clothing</p>
+               </div> 
+               <div class="col"> 
+                  <h5>Quick Links</h5> 
+                  <ul class="nav flex-column"> 
+                     <li class="nav-item mb-2"><a href="#hero" class="nav-link p-0 text-body-secondary">Home</a></li> 
+                     <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-body-secondary">About</a></li> 
+                     <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-body-secondary">Services</a></li> 
+                     <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li> 
+                  </ul>
+               </div> 
+               <div class="col mb-3"> 
+                  <h5>Follow Us</h5> 
+                  <ul class="nav gap-3 fs-4"> 
+                     <a href="#" target="_blank" class="text-body-secondary"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="#" target="_blank" class="text-body-secondary"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#" target="_blank" class="text-body-secondary"><i class="fa-brands fa-youtube"></i></a>
+                  </ul>
                </div>
             </div>
-         </div>
-         <p class="footer-bottom">&copy; 2026 AuraFashion | All Rights Reserved</p>
-      </footer> -->
-
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-4 my-4 border-top"> 
-         <div class="col mb-3"> 
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">AuraFashion</a>
-            <p class="text-body-secondary">© 2026</p>
-         </div>
-         <div class="col mb-3"> 
-            <h5>About</h5> 
-            <p>We are dedicated to promoting your self-expression through your clothing</p>
-         </div> 
-         <div class="col mb-3"> 
-            <h5>Quick Links</h5> 
-            <ul class="nav flex-column"> 
-               <li class="nav-item mb-2"><a href="#hero" class="nav-link p-0 text-body-secondary">Home</a></li> 
-               <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-body-secondary">About</a></li> 
-               <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-body-secondary">Services</a></li> 
-               <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li> 
-            </ul>
-         </div> 
-         <div class="col mb-3"> 
-            <h5>Follow Us</h5> 
-            <ul class="nav flex-column"> 
-               <a href="#" target="_blank" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-facebook"></i></a>
-               <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-               <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </ul>
          </div>
       </footer>
   </body>
